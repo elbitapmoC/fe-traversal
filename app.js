@@ -1,19 +1,12 @@
-// Store Buttons
+let boxes = document.getElementsByClassName("box");
 
-// Store .boxes
+// convert html colllect ^ to an array
+console.log(Array.isArray(boxes)); // F
+console.log(Array.isArray(Array.from(boxes))); // T
+Array.from(boxes).forEach((box) => {
+  console.log(box);
+});
 
-// Store html for each box in a variable.
-const buttons = document.getElementsByTagName("button"); //HTML Collection
-const boxes = document.getElementsByClassName("box");
-
-const arr = Array.prototype.map.call(boxes, (box) => box.innerHTML);
-
-buttons[0].onclick = function () {
-  arr.push(arr.shift());
-  Array.prototype.forEach.call(boxes, (box, ind) => (box.innerHTML = arr[ind]));
-};
-
-buttons[1].onclick = function () {
-  arr.unshift(arr.pop());
-  Array.prototype.forEach.call(boxes, (box, ind) => (box.innerHTML = arr[ind]));
-};
+let divs = document.getElementsByTagName("div");
+console.log(divs);
+console.log(boxes[1]);
