@@ -9,28 +9,15 @@
     <title>Replacement Array</title>
   </head>
   <body>
-    <section>
-      <button
-        type="button"
-        class="bg-blue-700 px-2.5 py-2.5 mr-6 mb-2"
-        id="left"
-      >
-        Left
-      </button>
-      <aside class="boxes">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
+    <section class="grandparent" id="grandparent">
+      <aside class="parent">
+        <article class="child"></article>
+        <article class="child"></article>
       </aside>
-      <button
-        type="button"
-        class="bg-blue-700 px-2.5 py-2.5 ml-6 mb-2"
-        id="right"
-      >
-        Right
-      </button>
+      <aside class="parent">
+        <article class="child"></article>
+        <article class="child"></article>
+      </aside>
     </section>
     <script src="./app.js"></script>
   </body>
