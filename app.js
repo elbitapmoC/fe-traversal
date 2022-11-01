@@ -16,7 +16,7 @@ let grandparent = document.querySelector("#grandparent");
 // let parent = document.querySelector(".parent");
 // changeColor(parent);
 
-// parent - querySelectporAll
+// parent - querySelectorAll
 // let parents = document.querySelectorAll(".parent"); //nodeList
 // console.log(parents);
 // NOTICE - When using querySelector all. We did not have to CONVERT to an array.
