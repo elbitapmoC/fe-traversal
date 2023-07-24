@@ -1,11 +1,14 @@
 // grandparent - getElementById
-// let grandparent = document.getElementById("gp");
+// let grandparent1 = document.getElementById("grandparent");
+// console.log(grandparent1);
 
 // grandparent - querySelector
-let grandparent = document.querySelector("#grandparent");
+// let grandparent2 = document.querySelector("#grandparent");
+// console.log(grandparent2);
 
 // parents - getElementsByClassName
-// let parents = document.getElementsByClassName("parent");
+let parents = document.getElementsByClassName("parent");
+console.log(parents);
 
 // iterate through each parent, change their background color (use function below)
 // Array.from(parents).forEach((parent) => {
@@ -41,7 +44,7 @@ function changeColor(element) {
 // let children = grandparent.querySelectorAll(".child");
 // console.log(children);
 
-// Selecting Children - BOTTOM UP ----------------------------------------------------
+// Selecting Cildren - BOTTOM UP ----------------------------------------------------
 let childOne = document.querySelector(".child");
 // let parent = childOne.parentElement;
 // let grandparentAlt = parent.parentElement;
@@ -49,7 +52,7 @@ let childOne = document.querySelector(".child");
 // changeColor(grandparentAlt);
 
 let grandparentAltAlt = childOne.closest(".grandparent");
-console.log(grandparentAltAlt);
+// console.log(grandparentAltAlt);
 changeColor(grandparentAltAlt);
 
 // Selecting Siblings ----------------------------------------------------
