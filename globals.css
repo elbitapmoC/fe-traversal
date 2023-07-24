@@ -3,7 +3,8 @@ body {
   color: white;
 }
 
-.boxes, .box {
+.boxes,
+.box {
   display: inline;
 }
 
